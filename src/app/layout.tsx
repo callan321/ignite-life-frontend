@@ -5,10 +5,9 @@ import NavBar from "@/components/NavBar";
 
 const inter = Inter({subsets: ["latin"]});
 
-const items = [
+const tabs = [
     {name: 'Home', link: '/'},
     {name: 'About', link: '/about'},
-    {name: 'Contact', link: '/contact'},
 ];
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export default function RootLayout({
 
         <body>
         <main className="flex min-h-screen flex-col items-center justify-between">
-            <NavBar items={items}/>
+            <NavBar tabs={tabs}/>
             <div className={inter.className}>{children}</div>
         </main>
         </body>
