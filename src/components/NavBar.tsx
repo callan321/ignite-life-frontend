@@ -4,6 +4,8 @@ import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 import Link from "next/link";
 import {useState} from "react";
 import Favicon from "@/components/Favicon";
+import Facebook from "@/components/Facebook";
+import Instagram from "@/components/Instagram";
 
 type NavBarProps = {
     tabs: {
@@ -19,7 +21,7 @@ export default function NavBar({tabs}: NavBarProps) {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <header className="bg-white shadow w-full">
+        <header className="bg-white shadow w-full z-50">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -58,10 +60,16 @@ export default function NavBar({tabs}: NavBarProps) {
                         </div>
                     </div>
                     <div
-                        className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <Favicon aria-hidden="true" size={48}/>
-                        {/* Profile dropdown */}
-                        <div className="sr-only">!!! Placeholder !!!</div>
+                        className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+                    >
+                        <div className="flex p-2 flex-shrink-0 items-center">
+                            <Favicon size={48}/>
+                            <span className="font-bold text-lg text-gold leading-tight">
+                                Ignite<br/>Life
+                            </span>
+                        </div>
+                        <Facebook size={36}/>
+                        <Instagram size={36}/>
                     </div>
                 </div>
             </div>
