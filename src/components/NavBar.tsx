@@ -4,17 +4,12 @@ import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 import Link from "next/link";
 import {useState} from "react";
 import Favicon from "@/components/Favicon";
-import Facebook from "@/components/Facebook";
-import Instagram from "@/components/Instagram";
+import {Navigation} from "@/config/types";
+import SocialMediaIcon from "@/components/SocialMediaIcon";
 
-type NavBarProps = {
-    tabs: {
-        name: string;
-        link: string
-    }[];
-};
 
-export default function NavBar({tabs}: NavBarProps) {
+
+export default function NavBar({navigation} : {navigation : Navigation}) {
     // const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
 
@@ -43,10 +38,10 @@ export default function NavBar({tabs}: NavBarProps) {
                         </div>
                         <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
 
-                            {tabs.map((tab) => {
+                            {navigation.main.map((tab) => {
                                 const isActive = false;
                                 return (
-                                    <Link key={tab.name} href={tab.link} passHref
+                                    <Link key={tab.name} href={tab.href} passHref
                                           className={
                                               isActive
                                                   ? "inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
@@ -57,6 +52,7 @@ export default function NavBar({tabs}: NavBarProps) {
                                     </Link>
                                 );
                             })}
+
                         </div>
                     </div>
                     <div
@@ -68,8 +64,6 @@ export default function NavBar({tabs}: NavBarProps) {
                                 Ignite<br/>Life
                             </span>
                         </div>
-                        <Facebook size={36}/>
-                        <Instagram size={36}/>
                     </div>
                 </div>
             </div>
@@ -77,10 +71,10 @@ export default function NavBar({tabs}: NavBarProps) {
             {isOpen && (
                 <nav className="sm:hidden">
                     <div className="space-y-1 pb-4 pt-2">
-                        {tabs.map((tab) => {
+                        {navigation.main.map((tab) => {
                             const isActive = false;
                             return (
-                                <Link key={tab.name} href={tab.link} passHref
+                                <Link key={tab.name} href={tab.href} passHref
                                       className={
                                           isActive
                                               ? "block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
