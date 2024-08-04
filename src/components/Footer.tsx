@@ -33,7 +33,7 @@ export default function Footer({navigation} : {navigation : Navigation}) {
                         <SocialMediaIcon key={item.name} item={item}/>
                     ))}
                 </div>
-                <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+                <p className="mt-10 text-center text-xs leading-5 text-gray-500 pb-6 sm:pb-8">
                     &copy; 2024 Ignite Life Bowen Therapy. All rights reserved.
                 </p>
             </div>
