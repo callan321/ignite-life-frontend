@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {NavigationIcon} from "@/config/types";
+import {NavigationIcon} from "@/config/navigationData";
 
 export default function SocialMediaIcon({item} : {item : NavigationIcon} ) {
     return (
@@ -13,6 +13,5 @@ export default function SocialMediaIcon({item} : {item : NavigationIcon} ) {
                 />
             </svg>
         </Link>
-
     )
 }

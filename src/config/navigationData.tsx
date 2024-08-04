@@ -1,10 +1,30 @@
-import { Navigation } from '@/config/types';
+
+
+export interface NavigationItem {
+    name: string;
+    href: string;
+}
+
+export interface NavigationIcon {
+    name: string;
+    href: string;
+    d: string;
+}
+
+export interface Navigation {
+    main: NavigationItem[];
+    social: NavigationIcon[];
+}
+
 
 export const navigation: Navigation = {
     main: [
         { name: 'Home', href: '/' },
         { name: 'About', href: '/about' },
-        { name: 'Jobs', href: '#' },
+        { name: 'Book', href: 'https://ignite-life-bowen-therapy.square.site'},
+        { name: 'Treatments', href: '/treatments' },
+        { name: 'Retreats & Groups', href: '/retreats-groups' },
+        { name: 'Contact', href: '/contact' },
     ],
     social: [
         {
@@ -19,4 +39,11 @@ export const navigation: Navigation = {
         },
     ],
 };
+
+export const contactDetails = [
+    '12346578',
+    'test@test.com',
+]
+
+
 

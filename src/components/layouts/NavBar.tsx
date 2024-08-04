@@ -3,9 +3,8 @@
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 import Link from "next/link";
 import {useState} from "react";
-import Favicon from "@/components/Favicon";
-import {Navigation} from "@/config/types";
-import SocialMediaIcon from "@/components/SocialMediaIcon";
+import Favicon from "@/components/ui/Favicon";
+import {Navigation} from "@/config/navigationData";
 
 
 
@@ -16,7 +15,7 @@ export default function NavBar({navigation} : {navigation : Navigation}) {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <header className="bg-white shadow w-full z-50">
+        <header className="bg-white shadow-lg w-full z-50 overflow-hidden ">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -32,10 +31,11 @@ export default function NavBar({navigation} : {navigation : Navigation}) {
                             {isOpen && <XMarkIcon aria-hidden="true" className="block h-6 w-6"/>}
                         </button>
                     </div>
+
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="flex flex-shrink-0 items-center">
-                            <Favicon aria-hidden="true" size={48}/>
-                        </div>
+                        <span className="font-medium font-serif text-gray-600 text-lg text-gold leading-tight sm:hidden">
+                            <i>Ignite Life</i>
+                        </span>
                         <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
 
                             {navigation.main.map((tab) => {
@@ -60,8 +60,8 @@ export default function NavBar({navigation} : {navigation : Navigation}) {
                     >
                         <div className="flex p-2 flex-shrink-0 items-center">
                             <Favicon size={48}/>
-                            <span className="font-bold text-lg text-gold leading-tight">
-                                Ignite<br/>Life
+                            <span className="font-medium font-serif text-gray-600 hidden md:flex md:h text-lg text-gold leading-tight">
+                                <i>Ignite<br/>Life</i>
                             </span>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ export default function NavBar({navigation} : {navigation : Navigation}) {
             {isOpen && (
                 <nav className="sm:hidden">
                     <div className="space-y-1 pb-4 pt-2">
-                        {navigation.main.map((tab) => {
+                    {navigation.main.map((tab) => {
                             const isActive = false;
                             return (
                                 <Link key={tab.name} href={tab.href} passHref
