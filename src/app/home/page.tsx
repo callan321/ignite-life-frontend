@@ -134,12 +134,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex items-center justify-center w-full">
-                <div className="relative  overflow-hidden xl:w-1/3 sm:w-1/2 w-2/3">
-                    <ResponsiveImage url={'/slogan.png'} alt={'Ignite Life Slogan'} className="h-96"
-                                     aspectRatio={'4/3'}/>
-                </div>
-            </div>
+
 
 
         </div>
