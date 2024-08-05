@@ -16,7 +16,7 @@ The website is currently under production and can be found here:
 
 #### Pages
 - [ ] Home
-- [ ] About
+- [x] About
 - [ ] Book 
 - [ ] Treatments 
 - [ ] Retreats and Groups 
