@@ -37,7 +37,7 @@ export default function Home() {
                         </div>
                         <div className="text-center">
                             <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
-                                Ignite Life <br/>Bowen Therapy
+                                Ignite Life
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-900">
                                 Discover the transformative benefits of Bowen Therapy at Ignite Life. Our holistic

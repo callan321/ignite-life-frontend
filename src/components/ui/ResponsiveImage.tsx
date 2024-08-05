@@ -9,13 +9,17 @@ interface ResponsiveImageProps {
 
 export default function ResponsiveImage({url, alt, aspectRatio = '1', className = ''}: ResponsiveImageProps) {
     return (
-        <div className={`relative w-full overflow-hidden ${className}`} style={{ aspectRatio }}>
-            <Image
-                src={url}
-                alt={alt}
-                layout="fill"
-                objectFit="cover"
-            />
+        <div className={`relative overflow-visible transform   ${className}`} style={{aspectRatio}}>
+                <Image
+                    src={url}
+                    alt={alt}
+                    fill
+                    className=" scale-200 "
+                    style={{
+                        objectFit: 'contain',
+                        transform: 'scale(2)',
+                    }}
+                />
         </div>
     );
 }

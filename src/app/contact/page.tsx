@@ -1,14 +1,24 @@
 import React from 'react';
 
-const Page = () => {
+export default function About() {
     return (
         <div className="w-full flex flex-col main-content-wrapper">
 
+            <div className="w-full flex flex-col items-center justify-center pt-16 pb-8">
+                    <div className="flex flex-col items-center justify-center md:w-1/2 w-full">
+                    <iframe
+                        src="https://www.editmysite.com/ajax/apps/generateMap.php?elementid=867fa810-52c6-11ef-b2b6-6dad00b81f04&amp;map=google&amp;ineditor=0&amp;width=auto&amp;point=1&amp;control=3&amp;scalecontrol=1&amp;height=350px&amp;zoom=10&amp;zoomScale=70&amp;lat=-28.792261&amp;long=153.591599&amp;pincolor=%23000000&amp;pincontrastcolor=%23ffffff&amp;styles=%5B%7B%22featureType%22%3A%22poi%22%2C%22elementType%22%3A%22labels.text%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22off%22%7D%5D%7D%2C%7B%22featureType%22%3A%22poi.business%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22off%22%7D%5D%7D%2C%7B%22featureType%22%3A%22road%22%2C%22elementType%22%3A%22labels.icon%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22off%22%7D%5D%7D%2C%7B%22featureType%22%3A%22transit%22%2C%22stylers%22%3A%5B%7B%22visibility%22%3A%22off%22%7D%5D%7D%5D&amp;touch=1&amp;forcemapdrag=1"
+                        title="Location Map"
+                        loading="lazy"
+                        className="w-full h-[350px]"
+                    ></iframe>
+                    </div>
+            </div>
         </div>
     );
 }
 
-export default Page;
+
 function contact() {
     return (
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-0">

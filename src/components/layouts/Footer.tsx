@@ -1,18 +1,15 @@
 import SocialMediaIcon from "@/components/ui/SocialMediaIcon";
 import {Navigation} from "@/config/navigationData";
-import {contactDetails} from "@/config/navigationData";
-import ResponsiveImage from "@/components/ui/ResponsiveImage";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Divider from "@/components/ui/Divider";
 
 export default function Footer({navigation}: { navigation: Navigation }) {
 
     return (
         <footer className="bg-white w-full flex flex-col justify-center items-center">
-            <div className="flex w-full justify-center items-center p-8">
-                <div className="bg-gray-200 border-b w-3/4  sm:w-full lg:w-3/4  "></div>
-            </div>
+            <Divider/>
             <div className=" lg:w-3/4">
                 <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-4">
                     <div className="flex items-center justify-center w-full">
@@ -83,16 +80,14 @@ export default function Footer({navigation}: { navigation: Navigation }) {
                     <div className="flex-col flex w-full pl-8">
                         <div className="flex flex-col text-xs space-y-2">
                             <h3 className="font-medium text-sm">Newsletter</h3>
-                            <p>Coming Soon ...</p>
+                            <p>Coming Soon...</p>
 
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex w-full justify-center items-center p-8">
-                <div className="bg-gray-200 border-b w-3/4"></div>
-            </div>
+            <Divider/>
             <div className="mb-16 w-full">
                 <p className="text-center text-xs leading-5 text-gray-500">
                     &copy; Ignite Life Bowen Therapy
