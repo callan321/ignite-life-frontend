@@ -8,12 +8,64 @@ The website is currently under production and can be found here:
 
 ## Requirements 
 
-### Layout
-- [x] Navigation bar
+### Template 
 
-### Home Page 
+#### Layout
+- [x] Header
+- [x] Footer 
 
-- [ ] Hero Section
+#### Pages
+- [ ] Home
+- [ ] About
+- [ ] Book 
+- [ ] Treatments 
+- [ ] Retreats and Groups 
+- [ ] Contact
+
+### Content and Visual
+- [ ] typography 
+- [ ] Colour scheme 
+- [ ] Photographs 
+- [ ] Icons and other graphics
+
+#### Pages completed
+- [ ] Home
+- [ ] About
+- [ ] Book
+- [ ] Treatments
+- [ ] Retreats and Groups
+- [ ] Contact
+
+### Animations and Response 
+#### Pages completed
+- [ ] Home
+- [ ] About
+- [ ] Book
+- [ ] Treatments
+- [ ] Retreats and Groups
+- [ ] Contact
+
+### Accessibility
+#### Pages completed
+- [ ] Home
+- [ ] About
+- [ ] Book
+- [ ] Treatments
+- [ ] Retreats and Groups
+- [ ] Contact
+
+### Search Engine Optimisation 
+- [ ] Add metadata
+
+#### Pages completed
+- [ ] Home 
+- [ ] About
+- [ ] Book
+- [ ] Treatments
+- [ ] Retreats and Groups
+- [ ] Contact
+
+### Testing 
 
 ## Getting Started
 
