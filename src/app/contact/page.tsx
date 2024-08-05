@@ -3,16 +3,7 @@ import React from 'react';
 const Page = () => {
     return (
         <div className="w-full flex flex-col main-content-wrapper">
-            <div className="w-full flex flex-col">
-                <div className="w-full flex flex-col">
-                    <div id="YNPjxf" className="w-full flex flex-col mb-6 p-6 bg-white text-black">
-                        <div className="flex flex-col items-start text-left">
-                            <div className="w-full flex flex-row">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     );
 }
