@@ -31,7 +31,7 @@ The header
 
 #### Pages
 - [ ] Home
-- [ ] About
+- [x] About
 - [ ] Book 
 - [ ] Treatments 
 - [ ] Retreats and Groups 
