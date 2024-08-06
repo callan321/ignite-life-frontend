@@ -324,26 +324,126 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center">
-                <div className="w-full sm:w-1/2 md:w-1/3 overflow-hidden">
-                    <ResponsiveImage url={'/evonne.png'} alt={'test'} className={'-translate-y-32'}/>
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center p-36 ">
+                <div className="h- w-full sm:w-1/2 md:w-1/3 overflow-hidden flex items-center justify-center p-8">
+                    <div className='border-4 rounded-3xl p-4'>
+                        <p>
+                            What can I say, Heather fixed my knee! I damaged my arcuate ligament 10yrs ago and had it
+                            operated on.
+                            Since then I had a limp and pain ranging from mild to chronic. From the very first treatment
+                            I had relief,
+                            so decided to commit to more visits. Several sessions later.. pain free! I now continue to
+                            see Heather to
+                            stay well. Heather is caring and a professional Bowen Therapist, I would recommend her in a
+                            heartbeat to
+                            anyone in pain or looking for a holistic way to maintain their health.
+                        </p>
+                        <p>
+                            EVONNE
+                        </p>
+                        <p>
+                            NURSE
+                        </p>
+                    </div>
                 </div>
-                <div className="w-full sm:w-1/2 md:w-1/3 ">
-                    <ResponsiveImage url={'/evonne.png'} alt={'test'} className={'translate-y-72 translate-x-12'}/>
+                <div className="h-96 w-full sm:w-1/2 md:w-1/3 flex items-center justify-center p-8">
+                    <div className='border-4 rounded-3xl p-4'>
+                        <h3>
+                            What my clients say!
+                        </h3>
+                    </div>
                 </div>
-                <div className="w-full sm:w-1/2 md:w-1/3 overflow-hidden ">
-                    <ResponsiveImage url={'/rosie.png'} alt={'test'} className={'-translate-y-32'}/>
+                <div className="h-96 w-full sm:w-1/2 md:w-1/3 overflow-hidden flex items-center justify-center p-8">
+                    <div className='border-4 rounded-3xl p-4'>
+                        <p>
+                            Bowen Therapy was recommended to me for my Chronic Sinusitis. I was sceptical but hopeful.
+                            WOW, my healing
+                            was truly amazing and I am eternally grateful for Heather’s work. I endured Chronic
+                            Sinusitis for 7yrs,
+                            nothing helped. Breathing was difficult and after 5pm every day was really distressing.
+                            Within days of my
+                            first session there was a huge improvement in my breathing, I was feeling 75% better. Each
+                            session
+                            continued to improve my health. I actually don’t even suffer from Sinusitis anymore but I go
+                            to Bowen once
+                            a month now to stay well.
+                        </p>
+                        <p>
+                            ROSIE
+                        </p>
+                        <p>
+                            ARCHITECT
+                        </p>
+                    </div>
                 </div>
-                <div className="w-full sm:w-1/2 md:w-1/3 overflow-hidden">
-                    <ResponsiveImage url={'/cindy.png'} alt={'test'} className={'-translate-y-32'}/>
+                <div
+                    className="h-96 w-full sm:w-1/2 md:w-1/3 overflow-hidden flex items-center justify-center p-8 bg-pink-200">
+                    <div className='border-4 rounded-3xl p-4'>
+                        <p>
+                            I am so grateful to find Bowen Therapy with Heather. I decided to try it for my Multiple
+                            Sclerosis because
+                            I read an article saying that Bowen Therapy can help relieve MS symptoms. Also my sister
+                            see’s Heather for
+                            her back. Turns out, Bowen Therapy does help, a lot! My Bowen sessions with Heather
+                            definitely contributes
+                            to feeling pain relief, leg strength, energy, improved sleep and other forms of relief. I
+                            feel very relaxed
+                            and safe during my treatments with Heather. I highly recommend her.
+                        </p>
+                        <p>
+                            CINDY
+                        </p>
+                        <p>
+                            ARTIST
+                        </p>
+                    </div>
                 </div>
-                <div className="w-full sm:w-1/2 md:w-1/3 overflow-hidden">
-                    <ResponsiveImage url={'/jen.png'} alt={'test'} className={'-translate-y-32'}/>
+                <div
+                    className="h-96 w-full sm:w-1/2 md:w-1/3 overflow-hidden flex items-center justify-center p-8 bg-blue-200">
+                    <div className='border-4 rounded-3xl p-4'>
+                        <p>
+                            I have been seeing Heather on and off for a few years. Bowen has really helped my neck
+                            tension and pain I
+                            get from stress and work. I have found Bowen Therapy has also helped with my overall
+                            physical and mental
+                            well-being. Heather’s treatments are so good that I only go 2 to 3 times then I don’t need
+                            to go back for
+                            months.
+                        </p>
+                        <p>
+                            JEN
+                        </p>
+                        <p>
+                            CHEF
+                        </p>
+                    </div>
                 </div>
-                <div className="w-full sm:w-1/2 md:w-1/3 overflow-hidden ">
-                    <ResponsiveImage url={'/abby.png'} alt={'test'} className={'-translate-y-32'}/>
+                <div
+                    className="h-96 w-full sm:w-1/2 md:w-1/3 overflow-hidden flex items-center justify-center p-8 bg-gray-400">
+                    <div className='border-4 rounded-3xl p-4'>
+                        <p>
+                            Bowen Therapy was recommended to me for my Chronic Sinusitis. I was sceptical but hopeful.
+                            WOW, my healing
+                            was truly amazing and I am eternally grateful for Heather’s work. I endured Chronic
+                            Sinusitis for 7yrs,
+                            nothing helped. Breathing was difficult and after 5pm every day was really distressing.
+                            Within days of my
+                            first session there was a huge improvement in my breathing, I was feeling 75% better. Each
+                            session
+                            continued to improve my health. I actually don’t even suffer from Sinusitis anymore but I go
+                            to Bowen once
+                            a month now to stay well.
+                        </p>
+                        <p>
+                            ROSIE
+                        </p>
+                        <p>
+                            ARCHITECT
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }

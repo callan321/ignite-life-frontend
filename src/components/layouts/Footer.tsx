@@ -12,7 +12,7 @@ export default function Footer({navigation}: { navigation: Navigation }) {
             <Divider/>
             <div className=" lg:w-3/4">
                 <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-4">
-                    <div className="flex items-center justify-center w-full">
+                    <div className="flex items-center justify-center w-full overflow-hidden">
                         <div className="relative w-48 h-48">
                             <Image
                                 src="/slogan.png"
